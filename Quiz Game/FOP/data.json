@@ -1,0 +1,44 @@
+{
+  "question": [
+    "Q1. Who is the inventor of World Wide Web(www)?",
+    "Q2. Who is the father of computer science?",
+    "Q3. Who is the first programmer on Earth?",
+    "Q4. Who invented the first touchscreen interface?",
+    "Q5. Who is the father of digital revolution?"
+  ],
+  "answer": [
+    1,
+    3,
+    2,
+    4,
+    3
+  ],
+  "options": [
+
+    ["Tim Berners Lee",
+      "Bill Gates",
+      "Steve Jobs",
+      "Sergey Brin"
+    ],
+    ["Mark Zuckerberg",
+      "Richard Stallman",
+      "Alan Turing",
+      "Bill Gates"
+    ],
+    ["Elon Musk",
+      "Ada Lovelace",
+      "Larry Page",
+      "Vitalik Buterin"
+    ],
+    ["Elon Musk",
+      "Richard Branson",
+      "David Packard",
+      "E.A. Johnson"
+    ],
+    ["Bill Hewlett",
+      "Steve Wozniak",
+      "Steve Jobs",
+      "Bill Gates"
+    ]
+  ]
+}
