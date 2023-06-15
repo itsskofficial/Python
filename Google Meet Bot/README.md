@@ -84,7 +84,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Passion8 Screen Shot][product-screenshot]]
+[![MeetNinja Screen Shot][product-screenshot]]
 
 A super dope tool that attends your Google Meet(s) for you on autopilot while you sleep or work on something else. MeetNinja flawlessly handles multiple Meet sessions, background activity, scheduling, and also disables your Meet camera and microphone in-Meet! It is also equipped with color-coded, concise activity logging (verbose) with timestamps of all joining and ending activities for each Meet session (to assure you—upon your return—that your Meets were *indeed* successfully attended). Supports Google Chrome and Mozilla Firefox, on Linux, Mac, and Windows.
 </br>
