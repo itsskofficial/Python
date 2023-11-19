@@ -2,7 +2,7 @@ import streamlit as st
 from utils import *
 
 if "board" not in st.session_state:
-    st.session_state.board = board = [[' ' for _ in range(3)] for _ in range(3)]
+    st.session_state.board = [[' ' for _ in range(3)] for _ in range(3)]
 
 def app() :
     st.title("Tic Tac Toe")
