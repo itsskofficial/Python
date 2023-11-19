@@ -17,7 +17,7 @@ def app() :
 
         print_board(board)
     with col_2 :
-        if player == 'X':
+        if st.session_state.player == 'X':
             best_val = -float('inf')
             best_move = None
             alpha = -float('inf')
