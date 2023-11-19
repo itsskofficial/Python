@@ -67,15 +67,15 @@ def find_best_move(player):
     if player == 'X':
         best_val = -float('inf')
         best_move = None
-        alpha = -float('inf')
-        beta = float('inf')
+        st.session_state.alpha = -float('inf')
+        st.session_state.beta = float('inf')
 
         for row in range(3):
             for col in range(3):
-                if board[row][col] == ' ':
-                    board[row][col] = 'X'
-                    move_val = minimax(board, 0, False, alpha, beta)
-                    board[row][col] = ' '
+                if st.session_state.board[row][col] == ' ':
+                    st.session_state.board[row][col] = 'X'
+                    move_val = minimax(st.session_state.board, 0, False, alpha, beta)
+                    st.session_state.board[row][col] = ' '
 
                     if move_val > best_val:
                         best_move = (row, col)
