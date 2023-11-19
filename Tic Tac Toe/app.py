@@ -33,7 +33,7 @@ def app() :
 
         else :
             if st.session_state.player == 'X':
-                st.header("AI is playing...")
+                st.header(label = "AI is playing...", divider = False)
                 move = find_best_move()
                 row, col = move
                 st.session_state.board[row][col] = st.session_state.player
