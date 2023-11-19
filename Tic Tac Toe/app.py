@@ -47,5 +47,3 @@ def app() :
                 st.session_state.player = 'X' 
                 app()
 
-if __name__ == "__main__" :
-
