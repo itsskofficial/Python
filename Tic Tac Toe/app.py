@@ -25,6 +25,7 @@ def app() :
             else:
                 st.write("It's a draw!")
             
+            if st.
             for key in st.session_state.keys :
                 def st.session_state[key]
 
