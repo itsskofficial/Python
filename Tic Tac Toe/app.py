@@ -6,7 +6,6 @@ def app() :
     col_1, col_2 = st.columns(2)
     with col_1 :
         move = find_best_move(board, current_player)
-
         row, col = move
         board[row][col] = current_player
 
