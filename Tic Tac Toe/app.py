@@ -32,6 +32,7 @@ def app() :
                 st.rerun()
 
         else :
+            
             if st.session_state.player == 'X':
                 move = find_best_move()
                 row, col = move
