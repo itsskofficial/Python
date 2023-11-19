@@ -4,7 +4,7 @@ def print_board():
     for row in st.session_state.board:
         body = "\t".join(row)
         print(body)
-        st.subheader(body = f"{row[0]}\t{row[1]}\t{row{2}}", divider = False)
+        st.subheader(body = f"{row[0]}\t{row[1]}\t{row[2]}", divider = False)
         st.write("")
         st.write("")
 
