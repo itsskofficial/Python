@@ -58,7 +58,9 @@ def app() :
                 col = st.number_input(label = "Enter column: ", min_value = 0, max_value = 2)
                 if st.button(label = "Confirm move", type = "primary") :
                     if st.session_state.board[row][col] != "" :
-                    st.session_state.board[row][col] = st.session_state.player
-                    st.session_state.player = 'X' 
-                    st.rerun()
+                        st.session_state.board[row][col] = st.session_state.player
+                        st.session_state.player = 'X' 
+                        st.rerun()
+                    else :
+                        st.warning("That block is filled")
 app()
