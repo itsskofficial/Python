@@ -15,18 +15,15 @@ def app() :
         print_board()
 
     with col_2 :
-
-        while True:
             
-
-            winner = evaluate()
-            if winner is not None:
-                if winner == 1:
-                    st.write("Player 'X' wins!")
-                elif winner == -1:
-                    st.write("Player 'O' wins!")
-                else:
-                    st.write("It's a draw!")
+        winner = evaluate()
+        if winner is not None:
+            if winner == 1:
+                st.write("Player 'X' wins!")
+            elif winner == -1:
+                st.write("Player 'O' wins!")
+            else:
+                st.write("It's a draw!")
 
             current_player = 'O' if current_player == 'X' else 'X'
 
