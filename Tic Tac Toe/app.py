@@ -6,3 +6,4 @@ def app() :
     col_1, col_2 = st.columns(2)
     with col_1 :
         print_board()
+    
