@@ -62,6 +62,3 @@ def minimax(depth, is_maximizing, alpha, beta):
                     if beta <= alpha:
                         break
         return min_eval
-    
-def find_best_move():
-    
