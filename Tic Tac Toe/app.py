@@ -4,6 +4,9 @@ from utils import *
 if "board" not in st.session_state:
     st.session_state.board = [[' ' for _ in range(3)] for _ in range(3)]
 
+if "player" not in st.session_state:
+    st.session.state.player = "X"
+
 def app() :
     st.title("Tic Tac Toe")
     col_1, col_2 = st.columns(2)
