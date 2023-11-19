@@ -32,7 +32,6 @@ def app() :
                 st.rerun()
 
         else :
-
             if st.session_state.player == 'X':
                 st.write("AI is playing...")
                 move = find_best_move()
