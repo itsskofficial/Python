@@ -28,6 +28,8 @@ def app() :
             if st.button("Play again"):
                 for key in st.session_state.keys :
                     del st.session_state[key]
+                    
+                st.rerun()
 
             current_player = 'O' if current_player == 'X' else 'X'
 
