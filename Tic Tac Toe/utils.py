@@ -63,7 +63,7 @@ def minimax(depth, is_maximizing, alpha, beta):
                         break
         return min_eval
     
-def find_best_move(player):
+def find_best_move():
     if player == 'X':
         best_val = -float('inf')
         best_move = None
