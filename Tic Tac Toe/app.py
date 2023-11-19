@@ -21,7 +21,7 @@ def app() :
             row, col = move
             st.session_state.board[row][col] = st.session_state.player
 
-            winner = evaluate(board)
+            winner = evaluate()
             if winner is not None:
                 if winner == 1:
                     print("Player 'X' wins!")
