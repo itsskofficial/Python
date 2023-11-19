@@ -3,7 +3,7 @@ import streamlit as st
 def print_board():
     for row in st.session_state.board:
         st.subheader(body = "\t".join(row), divider = False)
-    st.write("\n\n")
+        st.write("\n\n")
 
 def evaluate():
     for row in st.session_state.board:
