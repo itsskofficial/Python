@@ -3,7 +3,8 @@ import streamlit as st
 def print_board():
     for row in st.session_state.board:
         col_1, col_2, col_3 = st.columns(3)
-        with col
+        with col_1:
+            st.header(label = "AI is playing...", divider = "red")
         st.write("")
         st.write("")
 
