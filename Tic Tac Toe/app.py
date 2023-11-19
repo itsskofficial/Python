@@ -32,11 +32,12 @@ def app() :
                 st.rerun()
 
         else :
-            
+
             if st.session_state.player == 'X':
                 move = find_best_move()
                 row, col = move
                 st.session_state.board[row][col] = st.session_state.player
+                current_player = 'O' if current_player == 'X' else 'X'
                 st.rerun()
         
             else:
