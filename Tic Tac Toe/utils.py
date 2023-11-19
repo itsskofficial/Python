@@ -63,7 +63,7 @@ def minimax():
                         break
         return min_eval
     
-def find_best_move(board, player):
+def find_best_move(player):
     if player == 'X':
         best_val = -float('inf')
         best_move = None
