@@ -41,11 +41,11 @@ def minimax():
             for col in range(3):
                 if st.session_state.board[row][col] == ' ':
                     st.session_state.board[row][col] = 'X'
-                    eval = minimax(st.session_state.board, st.session_state.depth + 1, False, st.session_state.alpha, st.session_state.beta)
+                    eval = minimax(st.session_state.board, st.session_state.depth + 1, False, alpha, st.session_state.beta)
                     st.session_state.board[row][col] = ' '
                     max_eval = max(max_eval, eval)
-                    st.session_state.alpha = max(st.session_state.alpha, eval)
-                    if st.session_state.beta <= st.session_state.alpha:
+                    alpha = max(alpha, eval)
+                    if st.session_state.beta <= alpha:
                         break
         return max_eval
     
@@ -55,11 +55,11 @@ def minimax():
             for col in range(3):
                 if st.session_state.board[row][col] == ' ':
                     st.session_state.board[row][col] = 'O'
-                    eval = minimax(st.session_state.board, st.session_state.depth + 1, True, st.session_state.alpha, st.session_state.beta)
+                    eval = minimax(st.session_state.board, st.session_state.depth + 1, True, alpha, st.session_state.beta)
                     st.session_state.board[row][col] = ' '
                     min_eval = min(min_eval, eval)
                     st.session_state.beta = min(st.session_state.beta, eval)
-                    if st.session_state.beta <= st.session_state.alpha:
+                    if st.session_state.beta <= alpha:
                         break
         return min_eval
     
