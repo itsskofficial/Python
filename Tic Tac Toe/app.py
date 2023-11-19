@@ -20,7 +20,7 @@ def app() :
         winner = evaluate()
         if winner is not None:
             if winner == 1:
-                st.write("Player 'X' wins!")
+                st.write("AI wins!")
             elif winner == -1:
                 st.write("Player 'O' wins!")
             else:
