@@ -2,7 +2,7 @@ import streamlit as st
 
 def print_board():
     for row in st.session_state.board:
-        
+        body = ""
         st.subheader(body = row[0], divider = False)
         col_2.subheader(body = row[1], divider = False)
         col_3.subheader(body = row[2], divider = False)
