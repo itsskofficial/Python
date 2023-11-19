@@ -16,7 +16,6 @@ def app() :
         print_board()
 
     with col_2 :
-            
         winner = evaluate()
         if winner is not None:
             if winner == 1:
