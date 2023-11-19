@@ -37,7 +37,7 @@ def app() :
                 move = find_best_move()
                 row, col = move
                 st.session_state.board[row][col] = st.session_state.player
-                current_player = 'O' if current_player == 'X' else 'X'
+                st.session_state.player = 'O' 
                 st.rerun()
         
             else:
