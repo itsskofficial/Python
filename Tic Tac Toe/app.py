@@ -7,4 +7,4 @@ def app() :
     with col_1 :
         print_board()
     with col_2 :
-        row = st.text_input("Enter row number ()")
+        row = st.text_input("Enter row number (0 - 2)")
