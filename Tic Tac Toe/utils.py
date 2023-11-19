@@ -35,7 +35,7 @@ def minimax(depth, is_maximizing):
     if result is not None:
         return result
 
-    if st.session_state.is_maximizing:
+    if is_maximizing:
         max_eval = -float('inf')
         for row in range(3):
             for col in range(3):
