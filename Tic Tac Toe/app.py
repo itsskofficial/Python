@@ -20,9 +20,9 @@ def app() :
         winner = evaluate()
         if winner is not None:
             if winner == 1:
-                st.write("AI wins!")
+                st.header("AI wins!")
             elif winner == -1:
-                st.write("You win!")
+                st.header("You win!")
             else:
                 st.write("It's a draw!")
             
