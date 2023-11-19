@@ -38,7 +38,7 @@ def app() :
                     print("It's a draw!")
                 break
 
-        current_player = 'O' if current_player == 'X' else 'X'
+            current_player = 'O' if current_player == 'X' else 'X'
         if st.session_state.player == 'X':
             best_val = -float('inf')
             best_move = None
