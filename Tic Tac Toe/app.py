@@ -41,7 +41,7 @@ def app() :
                 st.rerun()
         
             else:
-                st.write("Its your turn")
+                st.header(label = "AI is playing...", divider = "blue")
                 row = st.number_input(label = "Enter row: ", min_value = 0, max_value = 2)
                 col = st.number_input(label = "Enter column: ", min_value = 0, max_value = 2)
                 if st.button("Confirm move") :
