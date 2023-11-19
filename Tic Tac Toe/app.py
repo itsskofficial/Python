@@ -26,7 +26,7 @@ def app() :
             else:
                 st.header(body = "It's a draw!", divider = "rainbow")
             
-            if st.button("Play again"):
+            if st.button(label = "Play again", type = "primary"):
                 for key in st.session_state.keys() :
                     del st.session_state[key]
 
