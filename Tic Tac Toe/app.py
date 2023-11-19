@@ -34,6 +34,7 @@ def app() :
         else :
 
             if st.session_state.player == 'X':
+                st.write("Ai")
                 move = find_best_move()
                 row, col = move
                 st.session_state.board[row][col] = st.session_state.player
