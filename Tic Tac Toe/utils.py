@@ -29,7 +29,7 @@ def evaluate():
 
     return None
 
-def minimax(depth, ):
+def minimax(depth, is_max):
     result = evaluate(st.session_state.board)
 
     if result is not None:
