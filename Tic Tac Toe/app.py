@@ -1,5 +1,6 @@
 import streamlit as st
 from utils import *
+import time
 
 if "board" not in st.session_state:
     st.session_state.board = [[' ' for _ in range(3)] for _ in range(3)]
