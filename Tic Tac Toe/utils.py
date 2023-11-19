@@ -29,7 +29,7 @@ def evaluate():
 
     return None
 
-def minimax():
+def minimax(depth, ):
     result = evaluate(st.session_state.board)
 
     if result is not None:
@@ -55,7 +55,7 @@ def minimax():
             for col in range(3):
                 if st.session_state.board[row][col] == ' ':
                     st.session_state.board[row][col] = 'O'
-                    eval = minimax(st.session_state.board, depth + 1, True, alpha, beta)
+                    eval = minimax(depth + 1, True, alpha, beta)
                     st.session_state.board[row][col] = ' '
                     min_eval = min(min_eval, eval)
                     beta = min(beta, eval)
