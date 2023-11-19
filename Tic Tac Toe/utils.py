@@ -74,7 +74,7 @@ def find_best_move(player):
             for col in range(3):
                 if st.session_state.board[row][col] == ' ':
                     st.session_state.board[row][col] = 'X'
-                    move_val = minimax(st.session_state.board, 0, False, alpha, beta)
+                    move_val = minimax(0, False, alpha, beta)
                     st.session_state.board[row][col] = ' '
 
                     if move_val > best_val:
