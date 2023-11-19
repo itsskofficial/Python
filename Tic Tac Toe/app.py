@@ -57,7 +57,7 @@ def app() :
                 row = st.number_input(label = "Enter row: ", min_value = 0, max_value = 2)
                 col = st.number_input(label = "Enter column: ", min_value = 0, max_value = 2)
                 if st.button(label = "Confirm move", type = "primary") :
-                    if st.session_state.board[row][col] = " " :
+                    if st.session_state.board[row][col] == " " :
                         st.session_state.board[row][col] = st.session_state.player
                         st.session_state.player = 'X' 
                         st.rerun()
