@@ -13,9 +13,9 @@ def app() :
     with col_1 :
         move = find_best_move()
         row, col = move
-        board[row][col] = player
+        st.session_state.board[row][col] = st.session_state.player
 
-        print_board(board)
+        print_board()
     with col_2 :
         if st.session_state.player == 'X':
             best_val = -float('inf')
