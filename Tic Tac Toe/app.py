@@ -11,7 +11,7 @@ def app() :
     st.title("Tic Tac Toe")
     col_1, col_2 = st.columns(2)
     with col_1 :
-        move = find_best_move(board, player)
+        move = find_best_move()
         row, col = move
         board[row][col] = player
 
