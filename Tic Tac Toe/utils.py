@@ -28,3 +28,37 @@ def evaluate():
         return 0
 
     return None
+
+def minimax(board, depth, is_maximizing, alpha, beta):
+    result = evaluate(board)
+
+    if result is not None:
+        return result
+
+    if is_maximizing:
+        max_eval = -float('inf')
+        for row in range(3):
+            for col in range(3):
+                if board[row][col] == ' ':
+                    board[row][col] = 'X'
+                    eval = minimax(board, depth + 1, False, alpha, beta)
+                    board[row][col] = ' '
+                    max_eval = max(max_eval, eval)
+                    alpha = max(alpha, eval)
+                    if beta <= alpha:
+                        break
+        return max_eval
+    
+    else:
+        min_eval = float('inf')
+        for row in range(3):
+            for col in range(3):
+                if board[row][col] == ' ':
+                    board[row][col] = 'O'
+                    eval = minimax(board, depth + 1, True, alpha, beta)
+                    board[row][col] = ' '
+                    min_eval = min(min_eval, eval)
+                    beta = min(beta, eval)
+                    if beta <= alpha:
+                        break
+        return min_eval
