@@ -5,8 +5,6 @@ def print_board():
         body = "\t".join(row)
         print(body)
         st.subheader(body = f"{row[0]}\t{row[1]}\t{row{2}}", divider = False)
-        col_2.subheader(body = row[1], divider = False)
-        col_3.subheader(body = row[2], divider = False)
         st.write("")
         st.write("")
 
