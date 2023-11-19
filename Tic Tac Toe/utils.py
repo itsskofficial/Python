@@ -3,9 +3,9 @@ import streamlit as st
 def print_board():
     for row in st.session_state.board:
         col_1, col_2, col_3 = st.columns(3)
-        col_1.subheader(label = row[0], divider = False)
-        col_2.subheader(label = row[1], divider = False)
-        col_3.subheader(label = row[2], divider = False)
+        col_1.subheader(body = row[0], divider = False)
+        col_2.subheader(body = row[1], divider = False)
+        col_3.subheader(body = row[2], divider = False)
         st.write("")
         st.write("")
 
