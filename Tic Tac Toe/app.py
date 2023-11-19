@@ -22,7 +22,7 @@ def app() :
             if winner == 1:
                 st.write("AI wins!")
             elif winner == -1:
-                st.write("Player 'O' wins!")
+                st.write("You win!")
             else:
                 st.write("It's a draw!")
             
