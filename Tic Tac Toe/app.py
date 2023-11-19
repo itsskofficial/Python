@@ -44,7 +44,7 @@ def app() :
         
             else:
                 st.write("Its your turn")
-                row = st.number_input("Enter row (0, 1, 2): "))
+                row = st.number_input(label = "Enter row: ")
                 col = int(st.text_input("Enter column (0, 1, 2): "))
                 st.session_state.board[row][col] = st.session_state.player
                 st.session_state.player = 'X' 
