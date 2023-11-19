@@ -17,9 +17,7 @@ def app() :
     with col_2 :
 
         while True:
-            move = find_best_move()
-            row, col = move
-            st.session_state.board[row][col] = st.session_state.player
+            
 
             winner = evaluate()
             if winner is not None:
@@ -34,7 +32,9 @@ def app() :
             current_player = 'O' if current_player == 'X' else 'X'
 
         if st.session_state.player == 'X':
-            
+            move = find_best_move()
+            row, col = move
+            st.session_state.board[row][col] = st.session_state.player
     
         elif st.session_state.player == 'O':
             row = int(input("Enter row (0, 1, 2): "))
