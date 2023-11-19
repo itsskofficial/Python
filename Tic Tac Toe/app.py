@@ -24,7 +24,7 @@ def app() :
             elif winner == -1:
                 st.header(body = "You win!", divider = "rainbow")
             else:
-                st.write("It's a draw!")
+                st.header(body = "It's a draw!", divider = "rainbow")
             
             if st.button("Play again"):
                 for key in st.session_state.keys() :
