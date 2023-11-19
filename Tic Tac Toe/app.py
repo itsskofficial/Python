@@ -29,7 +29,9 @@ def app() :
             st.write("")
             st.write("")
             st.write("")
-            
+            st.write("")
+            st.write("")
+
             if st.button(label = "Play again", type = "primary"):
                 for key in st.session_state.keys() :
                     del st.session_state[key]
