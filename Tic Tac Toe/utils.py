@@ -67,8 +67,8 @@ def find_best_move(player):
     if player == 'X':
         best_val = -float('inf')
         best_move = None
-        st.session_state.alpha = -float('inf')
-        st.session_state.beta = float('inf')
+        alpha = -float('inf')
+        beta = float('inf')
 
         for row in range(3):
             for col in range(3):
