@@ -5,7 +5,7 @@ if "board" not in st.session_state:
     st.session_state.board = [[' ' for _ in range(3)] for _ in range(3)]
 
 if "player" not in st.session_state:
-    st.session.state.player = "X"
+    st.session_state.player = "X"
 
 def app() :
     st.title(":x::o:Tic Tac Toe")
