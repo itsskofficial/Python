@@ -1,6 +1,9 @@
 import streamlit as st
 from utils import *
 
+if "board" not in st.session_state:
+    st.session_state.board = 
+
 def app() :
     st.title("Tic Tac Toe")
     col_1, col_2 = st.columns(2)
