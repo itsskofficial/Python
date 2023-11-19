@@ -62,3 +62,21 @@ def minimax(depth, is_maximizing, alpha, beta):
                     if beta <= alpha:
                         break
         return min_eval
+
+def find_best_move() :
+    best_val = -float('inf')
+    best_move = None
+    alpha = -float('inf')
+    beta = float('inf')
+
+    for row in range(3):
+        for col in range(3):
+            if st.session_state.board[row][col] == ' ':
+                st.session_state.board[row][col] = 'X'
+                move_val = minimax(0, False, alpha, beta)
+                st.session_state.board[row][col] = ' '
+
+                if move_val > best_val:
+                    best_move = (row, col)
+                    best_val = move_val
+    return best_move
