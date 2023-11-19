@@ -5,7 +5,7 @@ def print_board():
         st.write(" ".join(row))
     st.write()
 
-def evaluate(board):
+def evaluate():
     for row in board:
         if all(cell == 'X' for cell in row):
             return 1
