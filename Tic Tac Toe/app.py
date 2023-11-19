@@ -9,6 +9,15 @@ if "player" not in st.session_state:
     st.session_state.player = "X"
 
 def app() :
+    hide_default_format = """
+<style>
+      /* example query for mobile layout */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+</style>
+"""
     st.title(":x::o: Tic Tac Toe")
     st.write("You are playing 'O' and the computer is playing 'X'")
     col_1, col_2 = st.columns(2)
