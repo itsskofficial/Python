@@ -53,12 +53,12 @@ def minimax():
         min_eval = float('inf')
         for row in range(3):
             for col in range(3):
-                if board[row][col] == ' ':
-                    board[row][col] = 'O'
-                    eval = minimax(board, depth + 1, True, alpha, beta)
-                    board[row][col] = ' '
+                if st.session_state.board[row][col] == ' ':
+                    st.session_state.board[row][col] = 'O'
+                    eval = minimax(st.session_state.board, st.session_state.depth + 1, True, st.session_state.alpha, st.session_state.beta)
+                    st.session_state.board[row][col] = ' '
                     min_eval = min(min_eval, eval)
-                    beta = min(beta, eval)
-                    if beta <= alpha:
+                    st.session_state.beta = min(beta, eval)
+                    if st.session_state.beta <= st.session_state.alpha:
                         break
         return min_eval
