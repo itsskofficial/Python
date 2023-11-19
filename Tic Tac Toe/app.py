@@ -8,7 +8,7 @@ if "player" not in st.session_state:
     st.session_state.player = "X"
 
 def app() :
-    st.title(":x::o:Tic Tac Toe")
+    st.title(":x::o: Tic Tac Toe")
     st.write("You are playing 'O' and the computer is playing 'X'")
     col_1, col_2 = st.columns(2)
 
