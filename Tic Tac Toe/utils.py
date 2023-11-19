@@ -58,7 +58,7 @@ def minimax():
                     eval = minimax(st.session_state.board, st.session_state.depth + 1, True, st.session_state.alpha, st.session_state.beta)
                     st.session_state.board[row][col] = ' '
                     min_eval = min(min_eval, eval)
-                    st.session_state.beta = min(beta, eval)
+                    st.session_state.beta = min(st.session_state.beta, eval)
                     if st.session_state.beta <= st.session_state.alpha:
                         break
         return min_eval
