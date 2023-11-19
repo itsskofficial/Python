@@ -47,4 +47,5 @@ def app() :
                 st.session_state.player = 'X' 
                 st.rerun()
 
-        
+if __name__ == "__main__" :
+            
