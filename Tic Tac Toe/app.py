@@ -10,12 +10,14 @@ if "player" not in st.session_state:
 def app() :
     st.title("Tic Tac Toe")
     col_1, col_2 = st.columns(2)
+    
     with col_1 :
         move = find_best_move()
         row, col = move
         st.session_state.board[row][col] = st.session_state.player
 
         print_board()
+
     with col_2 :
         if st.session_state.player == 'X':
             best_val = -float('inf')
