@@ -10,7 +10,7 @@ if "player" not in st.session_state:
 def app() :
     st.title("Tic Tac Toe")
     col_1, col_2 = st.columns(2)
-    
+
     with col_1 :
         move = find_best_move()
         row, col = move
@@ -19,6 +19,26 @@ def app() :
         print_board()
 
     with col_2 :
+
+        while True:
+        move = find_best_move(board, current_player)
+
+        row, col = move
+        board[row][col] = current_player
+
+        print_board(board)
+
+        winner = evaluate(board)
+        if winner is not None:
+            if winner == 1:
+                print("Player 'X' wins!")
+            elif winner == -1:
+                print("Player 'O' wins!")
+            else:
+                print("It's a draw!")
+            break
+
+        current_player = 'O' if current_player == 'X' else 'X'
         if st.session_state.player == 'X':
             best_val = -float('inf')
             best_move = None
