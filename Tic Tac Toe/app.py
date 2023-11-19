@@ -24,7 +24,7 @@ def app() :
             winner = evaluate()
             if winner is not None:
                 if winner == 1:
-                    print("Player 'X' wins!")
+                    st.write("Player 'X' wins!")
                 elif winner == -1:
                     print("Player 'O' wins!")
                 else:
