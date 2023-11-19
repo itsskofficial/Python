@@ -46,7 +46,7 @@ def app() :
                 st.header(body = "Its your turn", divider = "blue")
                 row = st.number_input(label = "Enter row: ", min_value = 0, max_value = 2)
                 col = st.number_input(label = "Enter column: ", min_value = 0, max_value = 2)
-                if st.button("Confirm move") :
+                if st.button(label = "Confirm move", ) :
                     st.session_state.board[row][col] = st.session_state.player
                     st.session_state.player = 'X' 
                     st.rerun()
