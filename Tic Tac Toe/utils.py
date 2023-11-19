@@ -29,13 +29,13 @@ def evaluate():
 
     return None
 
-def minimax(board, depth, is_maximizing, alpha, beta):
-    result = evaluate(board)
+def minimax():
+    result = evaluate(st.session_state.board)
 
     if result is not None:
         return result
 
-    if is_maximizing:
+    if st.session_state.is_maximizing:
         max_eval = -float('inf')
         for row in range(3):
             for col in range(3):
