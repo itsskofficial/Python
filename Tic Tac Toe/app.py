@@ -26,9 +26,9 @@ def app() :
                 if winner == 1:
                     st.write("Player 'X' wins!")
                 elif winner == -1:
-                    print("Player 'O' wins!")
+                    st.write("Player 'O' wins!")
                 else:
-                    print("It's a draw!")
+                    st.write("It's a draw!")
                 break
 
             current_player = 'O' if current_player == 'X' else 'X'
