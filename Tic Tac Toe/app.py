@@ -36,7 +36,7 @@ def app() :
             row, col = move
             st.session_state.board[row][col] = st.session_state.player
     
-        elif st.session_state.player == 'O':
+        else:
             row = int(input("Enter row (0, 1, 2): "))
             col = int(input("Enter column (0, 1, 2): "))
             return row, col
