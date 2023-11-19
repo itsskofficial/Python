@@ -37,7 +37,7 @@ def app() :
             st.session_state.board[row][col] = st.session_state.player
     
         else:
-            row = int(input("Enter row (0, 1, 2): "))
+            row = int(st.text_input("Enter row (0, 1, 2): "))
             col = int(input("Enter column (0, 1, 2): "))
             return row, col
             
