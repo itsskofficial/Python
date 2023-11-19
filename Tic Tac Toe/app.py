@@ -9,4 +9,5 @@ def app() :
     with col_2 :
         row = int(st.text_input("Enter row number (0 - 2):"))
         col = int(st.text_input("Enter column number (0 - 2): "))
-        if st.button("Play move")
+        if st.button("Confirm Move") :
+            
