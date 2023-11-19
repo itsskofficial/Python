@@ -44,7 +44,8 @@ def app() :
                 st.write("Its your turn")
                 row = st.number_input(label = "Enter row: ", min_value = 0, max_value = 2)
                 col = st.number_input(label = "Enter column: ", min_value = 0, max_value = 2)
-                st.session_state.board[row][col] = st.session_state.player
-                st.session_state.player = 'X' 
-                st.rerun()
+                if st.button("Confirm move" :)
+                    st.session_state.board[row][col] = st.session_state.player
+                    st.session_state.player = 'X' 
+                    st.rerun()
 app()
