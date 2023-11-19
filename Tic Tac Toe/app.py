@@ -49,4 +49,4 @@ def app() :
                 st.session_state.board[row][col] = st.session_state.player
                 st.session_state.player = 'X' 
                 app()
-
+app()
