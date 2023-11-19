@@ -32,16 +32,13 @@ def app() :
                 st.rerun()
 
         else :
-            
-            current_player = 'O' if current_player == 'X' else 'X'
-
-        if st.session_state.player == 'X':
-            move = find_best_move()
-            row, col = move
-            st.session_state.board[row][col] = st.session_state.player
-    
-        else:
-            row = int(st.text_input("Enter row (0, 1, 2): "))
-            col = int(st.text_input("Enter column (0, 1, 2): "))
-            st.session_state.board[row][col] = st.session_state.player
+            if st.session_state.player == 'X':
+                move = find_best_move()
+                row, col = move
+                st.session_state.board[row][col] = st.session_state.player
+        
+            else:
+                row = int(st.text_input("Enter row (0, 1, 2): "))
+                col = int(st.text_input("Enter column (0, 1, 2): "))
+                st.session_state.board[row][col] = st.session_state.player
             
