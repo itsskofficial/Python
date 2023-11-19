@@ -20,7 +20,7 @@ def app() :
         winner = evaluate()
         if winner is not None:
             if winner == 1:
-                st.header("AI wins!")
+                st.header(body = "AI wins!", divider = "rainbow")
             elif winner == -1:
                 st.header("You win!")
             else:
