@@ -4,7 +4,7 @@ def print_board():
     for row in st.session_state.board:
         col_1, col_2, col_3 = st.columns(3)
         with col_1:
-            st.subheader(label = "AI is playing...", divider = "red")
+            st.subheader(label = row[0], divider = False)
         st.write("")
         st.write("")
 
