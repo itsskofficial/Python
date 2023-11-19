@@ -36,9 +36,11 @@ def app() :
                 move = find_best_move()
                 row, col = move
                 st.session_state.board[row][col] = st.session_state.player
+                st.rerun()
         
             else:
                 row = int(st.text_input("Enter row (0, 1, 2): "))
                 col = int(st.text_input("Enter column (0, 1, 2): "))
                 st.session_state.board[row][col] = st.session_state.player
+                st.rerun()
             
