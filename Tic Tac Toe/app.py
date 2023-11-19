@@ -27,7 +27,7 @@ def app() :
                 st.write("It's a draw!")
             
             if st.button("Play again"):
-                for key in st.session_state.keys :
+                for key in st.session_state.keys() :
                     del st.session_state[key]
 
                 st.rerun()
