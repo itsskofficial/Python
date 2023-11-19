@@ -3,7 +3,7 @@ import streamlit as st
 def print_board():
     for row in st.session_state.board:
         col_1, col_2, col_3 = st.columns(3)
-        
+        with col
         st.write("")
         st.write("")
 
