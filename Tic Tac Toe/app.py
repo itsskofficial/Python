@@ -35,7 +35,7 @@ def app() :
                             best_val = move_val
             return best_move
     
-        elif player == 'O':
+        elif st.session_state.player == 'O':
             row = int(input("Enter row (0, 1, 2): "))
             col = int(input("Enter column (0, 1, 2): "))
             return row, col
