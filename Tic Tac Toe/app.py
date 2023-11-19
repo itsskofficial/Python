@@ -40,7 +40,7 @@ def app() :
                 row, col = move
                 st.session_state.board[row][col] = st.session_state.player
                 st.session_state.player = 'O' 
-                app()
+                st.rerun()
         
             else:
                 st.write("Its your turn")
@@ -48,5 +48,5 @@ def app() :
                 col = st.number_input(label = "Enter column: ", min_value = 0, max_value = 2)
                 st.session_state.board[row][col] = st.session_state.player
                 st.session_state.player = 'X' 
-                app()
+                st.rerun()
 app()
