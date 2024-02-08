@@ -42,10 +42,10 @@ app = FastAPI()
 #     text: str
 
 
-download_file_from_google_drive(id = "1WsXgYeELEsMmrIOOZmfEYJWZbCg2wl-l", destination = "Projects/BERTDeployment/")
+download_file_from_google_drive(id = "1WsXgYeELEsMmrIOOZmfEYJWZbCg2wl-l", destination = "./")
 
 bert = TFAutoModel.from_pretrained("bert-base-uncased")
-model_path = "Projects/BERTDeployment/bert_model.h5"
+model_path = "./bert_model.h5"
 my_model = tf.keras.models.load_model(model_path, custom_objects={'TFBertMainLayer': bert.bert})
 
 @app.get("/")
