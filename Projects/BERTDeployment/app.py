@@ -7,7 +7,7 @@ file_id = '1WsXgYeELEsMmrIOOZmfEYJWZbCg2wl-l'
 
 url = f'https://drive.google.com/uc?id={file_id}'
 
-output = "bert_model.h5"
+output = "Projects/BERTDeployment/bert_model.h5"
 
 gdown.download(url, output = output, quiet=False)
 
