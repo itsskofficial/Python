@@ -1,0 +1,4 @@
+tensorflow
+transformers
+gd_download
+fastapi
