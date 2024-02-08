@@ -2,3 +2,4 @@ tensorflow
 transformers
 gdown
 fastapi
+gunicorn
