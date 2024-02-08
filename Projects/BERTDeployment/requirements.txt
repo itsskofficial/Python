@@ -1,5 +1,4 @@
 tensorflow
 transformers
 gdown
-fastapi
-gunicorn
+streamlit
