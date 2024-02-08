@@ -1,4 +1,4 @@
 tensorflow
 transformers
-gd_download
+gdown
 fastapi

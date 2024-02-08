@@ -1,7 +1,7 @@
 import tensorflow as tf
 from fastapi import FastAPI
 from transformers import TFAutoModel
-from gd_download import download_file_from_google_drive
+import gdown
 
 app = FastAPI()
 
@@ -40,9 +40,14 @@ app = FastAPI()
 
 # class PredictionInput(BaseModel):
 #     text: str
+file_id = '1WsXgYeELEsMmrIOOZmfEYJWZbCg2wl-l'
 
+# Construct the download link
+url = f'https://drive.google.com/uc?id={file_id}'
 
-download_file_from_google_drive(id = "1WsXgYeELEsMmrIOOZmfEYJWZbCg2wl-l", destination = "./")
+output = "./bert_model.h5"
+
+gdown.download(url, output = output, quiet=False)
 
 bert = TFAutoModel.from_pretrained("bert-base-uncased")
 model_path = "./bert_model.h5"
